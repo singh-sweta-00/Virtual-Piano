@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+    <!-- CSS only 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <title>PianoPlay</title>
+</head>
+
+<body>
+    <header id="home-part">
+        <nav class="sticky">
+            <div class="row">
+                <img src="resources/img/piano-logo.png" alt="PianoPlay_Logo" class="logo">
+                <ul class="main-nav">
+                    <li><a href="#piano-part">Virtual Piano</a></li>
+                    <li><a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Themes</a>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#" id="summer" onclick="change()">Summer Theme</a>
+                            <a href="#" id="winter" onclick="change()">Winter Theme</a>
+                            <a href="#" id="happy" onclick="change()">Happy Theme</a>
+                        </div>
+                    </li>
+                    <li><a href="#work-part">How it Works</a></li>
+                    <li><a href="#">About Project</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="top-text-box">
+            <h1>ENJOY YOUR VIBE.<br><span style="font-family: 'Chewy', cursive;">MUSIC IS WHAT FEELINGS SOUND LIKE!<!--</span>--></h1>
+            <!--   <a class="bttn bttn-full js--scroll-to-piano" href="#">Play your Tune!</a>-->
+        </div>
+    </header>
+
+    <section class="section-feature " id="piano-part">
+        <div class="row">
+            <h2>Life's Like a Piano <br> It Goes The Way You Play It</h2>
+            <p class="long-copy">Use your keyboard for better experience.</p>
+        </div>
+        <div class="row">
+            <div class="piano">
+                <div data-note="C2" class="key white"> <span class="myId"> 1 </span> </div>
+                <div data-note="C#2" class="key black"> <span class="myId">  &#8679; + <br>1 </span> </div>
+                <div data-note="D2" class="key white"> <span class="myId"> 2 </span> </div>
+                <div data-note="D#2" class="key black"> <span class="myId">  &#8679; + <br>2 </span> </div>
+                <div data-note="E2" class="key white"> <span class="myId"> 3 </span> </div>
+                <div data-note="F2" class="key white"> <span class="myId"> 4 </span> </div>
+                <div data-note="F#2" class="key black"> <span class="myId">  &#8679; + <br>4 </span> </div>
+                <div data-note="G2" class="key white"> <span class="myId"> 5 </span> </div>
+                <div data-note="G#2" class="key black"> <span class="myId">  &#8679; + <br>5 </span> </div>
+                <div data-note="A2" class="key white"> <span class="myId"> 6 </span> </div>
+                <div data-note="A#2" class="key black"> <span class="myId">  &#8679; + <br>6 </span> </div>
+                <div data-note="B2" class="key white"> <span class="myId"> 7 </span> </div>
+                <div data-note="C3" class="key white"> <span class="myId"> 8 </span> </div>
+                <div data-note="C#3" class="key black"> <span class="myId">  &#8679; + <br>8 </span> </div>
+                <div data-note="D3" class="key white"> <span class="myId"> 9 </span> </div>
+                <div data-note="D#3" class="key black"> <span class="myId">  &#8679; + <br>9 </span> </div>
+                <div data-note="E3" class="key white"> <span class="myId"> 0 </span> </div>
+                <div data-note="F3" class="key white"> <span class="myId"> q </span> </div>
+                <div data-note="F#3" class="key black"> <span class="myId">  &#8679; + <br>q </span> </div>
+                <div data-note="G3" class="key white"> <span class="myId"> w </span> </div>
+                <div data-note="G#3" class="key black"> <span class="myId">  &#8679; + <br>w </span> </div>
+                <div data-note="A3" class="key white"> <span class="myId"> e </span> </div>
+                <div data-note="A#3" class="key black"> <span class="myId">  &#8679; + <br>e </span> </div>
+                <div data-note="B3" class="key white"> <span class="myId"> r </span> </div>
+                <div data-note="C4" class="key white"> <span class="myId"> t </span> </div>
+                <div data-note="C#4" class="key black"> <span class="myId">  &#8679; + <br>t </span> </div>
+                <div data-note="D4" class="key white"> <span class="myId"> y </span> </div>
+                <div data-note="D#4" class="key black"> <span class="myId">  &#8679; + <br>y </span> </div>
+                <div data-note="E4" class="key white"> <span class="myId"> u </span> </div>
+                <div data-note="F4" class="key white"> <span class="myId"> i </span> </div>
+                <div data-note="F#4" class="key black"> <span class="myId">  &#8679; + <br>i </span> </div>
+                <div data-note="G4" class="key white"> <span class="myId"> o </span> </div>
+                <div data-note="G#4" class="key black"> <span class="myId">  &#8679; + <br>o </span> </div>
+                <div data-note="A4" class="key white"> <span class="myId"> p </span> </div>
+                <div data-note="A#4" class="key black"> <span class="myId">  &#8679; + <br>p </span> </div>
+                <div data-note="B4" class="key white"> <span class="myId"> a </span> </div>
+                <div data-note="C5" class="key white"> <span class="myId"> s </span> </div>
+                <div data-note="C#5" class="key black"> <span class="myId">  &#8679; + <br>s </span> </div>
+                <div data-note="D5" class="key white"> <span class="myId"> d </span> </div>
+                <div data-note="D#5" class="key black"> <span class="myId">  &#8679; + <br>d </span> </div>
+                <div data-note="E5" class="key white"> <span class="myId"> f </span> </div>
+                <div data-note="F5" class="key white"> <span class="myId"> g </span> </div>
+                <div data-note="F#5" class="key black"> <span class="myId">  &#8679; + <br>g </span> </div>
+                <div data-note="G5" class="key white"> <span class="myId"> h </span> </div>
+                <div data-note="G#5" class="key black"> <span class="myId">  &#8679; + <br>h </span> </div>
+                <div data-note="A5" class="key white"> <span class="myId"> j </span> </div>
+                <div data-note="A#5" class="key black"> <span class="myId">  &#8679; + <br>j </span> </div>
+                <div data-note="B5" class="key white"> <span class="myId"> k </span> </div>
+                <div data-note="C6" class="key white"> <span class="myId"> l </span> </div>
+                <div data-note="C#6" class="key black"> <span class="myId">  &#8679; + <br>l </span> </div>
+                <div data-note="D6" class="key white"> <span class="myId"> z </span> </div>
+                <div data-note="D#6" class="key black"> <span class="myId">  &#8679; + <br>z </span> </div>
+                <div data-note="E6" class="key white"> <span class="myId"> x </span> </div>
+                <div data-note="F6" class="key white"> <span class="myId"> c </span> </div>
+                <div data-note="F#6" class="key black"> <span class="myId">  &#8679; + <br>c </span> </div>
+                <div data-note="G6" class="key white"> <span class="myId"> v </span> </div>
+                <div data-note="G#6" class="key black"> <span class="myId">  &#8679; + <br>v </span> </div>
+                <div data-note="A6" class="key white"> <span class="myId"> b  </span> </div>
+                <div data-note="A#6" class="key black"> <span class="myId">  &#8679; + <br>b </span> </div>
+                <div data-note="B6" class="key white"> <span class="myId"> n </span> </div>
+                <div data-note="C7" class="key white"> <span class="myId"> m </span> </div>
+            </div>
+            <audio id="C2" src="vendors/piano-key-tones/C2.mp3"></audio>
+            <audio id="C#2" src="vendors/piano-key-tones/Db2.mp3"></audio>
+            <audio id="D2" src="vendors/piano-key-tones/D2.mp3"></audio>
+            <audio id="D#2" src="vendors/piano-key-tones/Eb2.mp3"></audio>
+            <audio id="E2" src="vendors/piano-key-tones/E2.mp3"></audio>
+            <audio id="F2" src="vendors/piano-key-tones/F2.mp3"></audio>
+            <audio id="F#2" src="vendors/piano-key-tones/Gb2.mp3"></audio>
+            <audio id="G2" src="vendors/piano-key-tones/G2.mp3"></audio>
+            <audio id="G#2" src="vendors/piano-key-tones/Ab2.mp3"></audio>
+            <audio id="A2" src="vendors/piano-key-tones/A2.mp3"></audio>
+            <audio id="A#2" src="vendors/piano-key-tones/Bb2.mp3"></audio>
+            <audio id="B2" src="vendors/piano-key-tones/B2.mp3"></audio>
+            <audio id="C3" src="vendors/piano-key-tones/C3.mp3"></audio>
+            <audio id="C#3" src="vendors/piano-key-tones/Db3.mp3"></audio>
+            <audio id="D3" src="vendors/piano-key-tones/D3.mp3"></audio>
+            <audio id="D#3" src="vendors/piano-key-tones/Eb3.mp3"></audio>
+            <audio id="E3" src="vendors/piano-key-tones/E3.mp3"></audio>
+            <audio id="F3" src="vendors/piano-key-tones/F3.mp3"></audio>
+            <audio id="F#3" src="vendors/piano-key-tones/Gb3.mp3"></audio>
+            <audio id="G3" src="vendors/piano-key-tones/G3.mp3"></audio>
+            <audio id="G#3" src="vendors/piano-key-tones/Ab3.mp3"></audio>
+            <audio id="A3" src="vendors/piano-key-tones/A3.mp3"></audio>
+            <audio id="A#3" src="vendors/piano-key-tones/Bb3.mp3"></audio>
+            <audio id="B3" src="vendors/piano-key-tones/B3.mp3"></audio>
+            <audio id="C4" src="vendors/piano-key-tones/C4.mp3"></audio>
+            <audio id="C#4" src="vendors/piano-key-tones/Db4.mp3"></audio>
+            <audio id="D4" src="vendors/piano-key-tones/D4.mp3"></audio>
+            <audio id="D#4" src="vendors/piano-key-tones/Eb4.mp3"></audio>
+            <audio id="E4" src="vendors/piano-key-tones/E4.mp3"></audio>
+            <audio id="F4" src="vendors/piano-key-tones/F4.mp3"></audio>
+            <audio id="F#4" src="vendors/piano-key-tones/Gb4.mp3"></audio>
+            <audio id="G4" src="vendors/piano-key-tones/G4.mp3"></audio>
+            <audio id="G#4" src="vendors/piano-key-tones/Ab4.mp3"></audio>
+            <audio id="A4" src="vendors/piano-key-tones/A4.mp3"></audio>
+            <audio id="A#4" src="vendors/piano-key-tones/Bb4.mp3"></audio>
+            <audio id="B4" src="vendors/piano-key-tones/B4.mp3"></audio>
+            <audio id="C5" src="vendors/piano-key-tones/C5.mp3"></audio>
+            <audio id="C#5" src="vendors/piano-key-tones/Db5.mp3"></audio>
+            <audio id="D5" src="vendors/piano-key-tones/D5.mp3"></audio>
+            <audio id="D#5" src="vendors/piano-key-tones/Eb5.mp3"></audio>
+            <audio id="E5" src="vendors/piano-key-tones/E5.mp3"></audio>
+            <audio id="F5" src="vendors/piano-key-tones/F5.mp3"></audio>
+            <audio id="F#5" src="vendors/piano-key-tones/Gb5.mp3"></audio>
+            <audio id="G5" src="vendors/piano-key-tones/G5.mp3"></audio>
+            <audio id="G#5" src="vendors/piano-key-tones/Ab5.mp3"></audio>
+            <audio id="A5" src="vendors/piano-key-tones/A5.mp3"></audio>
+            <audio id="A#5" src="vendors/piano-key-tones/Bb5.mp3"></audio>
+            <audio id="B5" src="vendors/piano-key-tones/B5.mp3"></audio>
+            <audio id="C6" src="vendors/piano-key-tones/C6.mp3"></audio>
+            <audio id="C#6" src="vendors/piano-key-tones/Db6.mp3"></audio>
+            <audio id="D6" src="vendors/piano-key-tones/D6.mp3"></audio>
+            <audio id="D#6" src="vendors/piano-key-tones/Eb6.mp3"></audio>
+            <audio id="E6" src="vendors/piano-key-tones/E6.mp3"></audio>
+            <audio id="F6" src="vendors/piano-key-tones/F6.mp3"></audio>
+            <audio id="F#6" src="vendors/piano-key-tones/Gb6.mp3"></audio>
+            <audio id="G6" src="vendors/piano-key-tones/G6.mp3"></audio>
+            <audio id="G#6" src="vendors/piano-key-tones/Ab6.mp3"></audio>
+            <audio id="A6" src="vendors/piano-key-tones/A6.mp3"></audio>
+            <audio id="A#6" src="vendors/piano-key-tones/Bb6.mp3"></audio>
+            <audio id="B6" src="vendors/piano-key-tones/B6.mp3"></audio>
+            <audio id="C7" src="vendors/piano-key-tones/C7.mp3"></audio>
+
+            <div class="piano-btn">
+                <!--   <a class="bttn bttn-ghost ext-sty" href="" onclick="toggleText()">Keyboard Guide</a>-->
+                <!--<button class="bttn bttn-ghost ext-sty">Keyboard Guide</button>-->
+                <a class="bttn bttn-ghost ext-sty" href="#" onclick="">Themes</a>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="theory" id="work-part">
+        <div class="row">
+            <h3>How It Works</h3>
+        </div>
+        <div class="row">
+            <div class="steps">
+                <p>If you don't have a real piano or keyboard at home, you can play this virtual piano from PlayPiano. This online piano keyboard simulator lets you play seamlessly with your computer's keyboard.</p>
+                <p style="margin-top: 3%;">This virtual piano gives -
+                    <ul style="margin-top:2%; margin-left: 7%;">
+                        <li>
+                            play chords with one piano key.
+                        </li>
+                        <li>
+                            different themes for your vibes.
+                        </li>
+                        <li>
+                            easy platform to use.
+                        </li>
+                    </ul>
+                </p>
+                <div class="mob">
+                    If you are reading this from a mobile device, <strong>rotate it</strong> to display the virtual piano in full width.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pianoimg">
+            <p class="guide">Keyboard Guide</p>
+            <img class="imgg" src="resources/img/piano-img.png" alt="piano-img">
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="row footer1">
+
+
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#home-part">Home</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="end">
+
+            <p>CREATE YOUR OWN TUNE <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px; font-size: 115%"></i> CREATE YOUR OWN HAPPINESS!</p>
+            <p>&copy; 2021 by PianoPlay. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="resources/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+/*-------------------------------------------------------------------*/
+
+
+/*BASIC SETUP*/
+
+
+/*        #34495e   &#x20B9;  
+	font-family: 'Lato', sans-serif;   */
+
+
+/*-------------------------------------------------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: #fff;
+    color: #555555;
+    font-family: 'Mate SC', serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*REUSABLE CONTENTS*/
+
+
+/*-------------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*******HEADER********/
+
+
+/*-------------------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/piano1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    /*filter: blur(8px);*/
+}
+
+.top-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 240%;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 80px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    -webkit-transition: border-bottom 0.2s;
+    -moz-transition: border-bottom 0.2s;
+    -ms-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #4b6279;
+}
+
+
+/*        Sticky navi      */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(128, 125, 125);
+    z-index: 9;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 10px 0;
+    font-size: 75%;
+}
+
+.sticky .logo {
+    height: 67px;
+    margin-top: 0px;
+}
+
+.sticky .main-nav {
+    margin-top: 24px;
+}
+
+
+/*    themes    */
+
+
+/* Dropdown Button */
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    margin-top: 14px;
+    margin-left: -36px;
+    display: none;
+    position: absolute;
+    background-color: #9b9a9a;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: rgb(114, 114, 114)
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+/*******BUTTONS********/
+
+
+/*---------------------------------------*/
+
+.bttn:link,
+.bttn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-family: Mate SC;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 02.s;
+    transition: background-color 0.2s, border 0.2s, color 02.s;
+}
+
+.bttn-full:link,
+.bttn-full:visited,
+input[type=submit] {
+    background-color: #34495e;
+    border: 1px solid #34495e;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.bttn-ghost:link,
+.bttn-ghost:visited,
+input[type=submit] {
+    border: 1px solid #34495e;
+    color: #34495e;
+}
+
+.bttn:hover,
+.bttn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #2d3f50;
+}
+
+.bttn-full:hover,
+.bttn-full:active,
+input[type=submit] {
+    border: 1px solid #34495e;
+}
+
+.bttn-ghost:hover,
+.bttn-ghost:active {
+    border: 1px solid #34495e;
+    color: #fff;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*******Section piano********/
+
+
+/*     34495e   2d3f50     */
+
+
+/*-------------------------------------------------------------------*/
+
+.section-feature {
+    height: 100vh;
+    background-color: #F3F3F3;
+}
+
+h2,
+h3 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #34495e;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 90px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.piano {
+    display: flex;
+    text-transform: lowercase;
+    padding-bottom: 50px;
+}
+
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    cursor: pointer;
+    text-align: center;
+    font-size: 80%;
+}
+
+.white {
+    --width: 76px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.white.active {
+    background-color: #CCC;
+}
+
+.black {
+    --width: 49px;
+    background-color: black;
+    color: rgba(180, 177, 177, 0.699);
+    ;
+    margin-left: calc(var(--width) / -5);
+    margin-right: calc(var(--width) / -5);
+    z-index: 2;
+}
+
+.black.active {
+    background-color: #333;
+}
+
+.ext-sty {
+    margin-left: 42%;
+}
+
+.myId.hide {
+    display: none;
+}
+
+
+/***********************************************************/
+
+
+/***********HOW IT WORKS*****************/
+
+
+/************************************************************/
+
+.theory {
+    height: 100vh;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+h3:after {
+    display: block;
+    height: 2px;
+    background-color: #34495e;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.steps {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.steps li {
+    padding-bottom: 5px;
+}
+
+.mob {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    box-shadow: 2px 2px #888888b6;
+    margin-top: 11px;
+}
+
+.piano-img {
+    max-width: 100%;
+}
+
+.imgg {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.guide {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 3%;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*FOOTER*/
+
+
+/*-------------------------------------------------------------------*/
+
+footer {
+    margin-top: 2%;
+    background-color: #333;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    font-size: 80%;
+}
+
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.end {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 80%;
+    color: #888;
+}
